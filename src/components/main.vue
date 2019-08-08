@@ -2,7 +2,7 @@
   <div>
     <div>
       <!-- 按钮组件练习 -->
-      <Button>按钮</Button>
+      <Button siez='small'>按钮</Button>
       <br>
       <Button type='success'>按钮</Button>
       <br>

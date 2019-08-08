@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang='less' scope>
+<style lang='less' scoped>
 @import '../../assets/css/iviewcolor';
   .btn{
     display:inline-block;
@@ -39,9 +39,12 @@ export default {
       background:@backgroundColor;
       border-radius:@height/3;
       line-height:@height;
+      border: 1px solid @backgroundColor;
       &:hover{
         background:lighten(@backgroundColor,20%);
+        color: gray;
         transition:background 0.2s linear;
+        transition: color 0.2s linear;
       }
     }
     &.btn_basic{
