@@ -14,6 +14,7 @@ import GoodsList from "@/pages/routerHomework/GoodsList"
 import GoodsSearch from "@/pages/routerHomework/GoodsSearch"
 import GoodsType from "@/pages/routerHomework/GoodsType"
 import GoodsIndex from "@/pages/routerHomework/GoodsIndex"
+import GoodsDetail from "@/pages/routerHomework/GoodsDetail"
 import Order from "@/pages/routerHomework/Order"
 import Car from "@/pages/routerHomework/Car"
 
@@ -42,8 +43,9 @@ export default new Router({
       component:GoodsIndex,
       children:[
         {
-          path:"/goods/type",
+          path:"type",
           name:"goodstype",
+          alias:"abc",
           component:GoodsType,
         },
         {
@@ -55,6 +57,11 @@ export default new Router({
           path:"/goods/list",
           name:"goodslist",
           component:GoodsList,
+        },
+        {
+          path:"/goods/detail",
+          name:"goodsdetail",
+          component:GoodsDetail,
         },
       ]
     },
