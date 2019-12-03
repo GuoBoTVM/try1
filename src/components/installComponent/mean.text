@@ -1,0 +1,12 @@
+如何在main.js一次性引入某个文件夹里面的所有组件呢?
+
+1. 写好几个组件,然后写一个index.js
+2. 在index.js中引入,并循环注册
+3. 在main.js中引入index.js中的东西,然后Vue.component()
+
+这个installComponent文件,还有remtest就是做一个这样的练习
+
+screenHome 相当于主页
+screenContent 就是页面内容
+navBar  上方导航栏
+tabBar  下方tab栏

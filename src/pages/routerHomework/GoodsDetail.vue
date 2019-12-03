@@ -5,6 +5,8 @@
         $route中的params是{{$route.params}}
         <br>
         $route的query是{{$route.query}}
+        <br>
+        <div class="head"></div>
     </div>
 </template>
 
@@ -17,5 +19,9 @@ export default {
 </script>
 
 <style>
-
+.head{
+    width: 1rem;
+    height:1rem;
+    background: orange;
+}
 </style>
